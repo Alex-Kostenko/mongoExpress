@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <form action="/" method="POST">
+      <input type="text" name="name">
+      <button>Save</button>
+    </form>
+
+    <ul>
+      <% cars.forEach(function(car) { %>
+        <li>
+          <%= car.name %>
+        </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
