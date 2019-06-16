@@ -33,7 +33,7 @@ router.get('/comments/:carId', function (req, res, next) {
 
 router.post('/', function (req, res, next) {
 
-console.log('test1');
+  console.log(req.body.name);
 
   var silence = new Cars({ name: req.body.name });
   silence.save((error, el) => {
